@@ -33,7 +33,7 @@ public class Edge {
 	 */
 	private Vertex target;
 
-	public Edge(Vertex source,Vertex target) {
+	Edge(Vertex source,Vertex target) {
 		this.source = source;
 		this.target = target;
 	}

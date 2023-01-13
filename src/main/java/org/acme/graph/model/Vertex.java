@@ -35,7 +35,7 @@ public class Vertex {
 	 */
 	private boolean visited;
 
-	public Vertex() {
+	Vertex() {
 
 	}
 
