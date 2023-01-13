@@ -7,6 +7,8 @@ import org.locationtech.jts.geom.Coordinate;
 
 public class TestGraphFactory {
 
+	public static final double EPSILON = 1.0e-15;
+
 	/**
 	 * d / / a--b--c
 	 * 
