@@ -45,7 +45,8 @@ public class GraphReaderTest {
 
 	@Test
 	public void testRoute500() throws Exception {
-		File file = getResourceFile("/route500/idf/troncon_route.shp");
+		//File file = getResourceFile("/route500/idf/troncon_route.shp");
+		File file = new File("/home/formation/Documents/design pattern/tp-refactoring-graph/src/test/resources/route500/idf/troncon_route.shp");
 		Assert.assertTrue(file.exists());
 
 		Graph graph = reader.read(file);
