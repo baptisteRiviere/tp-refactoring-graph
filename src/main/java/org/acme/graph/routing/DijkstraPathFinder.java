@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+import org.acme.graph.errors.NotFoundException;
 import org.acme.graph.model.Edge;
 import org.acme.graph.model.Graph;
 import org.acme.graph.model.Vertex;
@@ -46,7 +47,7 @@ public class DijkstraPathFinder {
 			}
 		}
 		log.info("findPath({},{}) : path not found", origin, destination);
-		return null;
+		throw new NotFoundException(String.format("Path not found from '%s' to '%s'", origin, destination));
 	}
 
 	/**
